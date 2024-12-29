@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon - CoreWeb Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #121417;
+      color: white;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 2.5s ease;
+    }
+    .loader {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      animation: fadeIn 3s ease;
+    }
+    .loader span {
+      width: 15px;
+      height: 15px;
+      background: white;
+      border-radius: 50%;
+      animation: bounce 1.5s infinite;
+    }
+    .loader span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    .loader span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CoreWeb Studio</h1>
+    <p>Our website is under construction. Stay tuned for something amazing!</p>
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</body>
+</html>
